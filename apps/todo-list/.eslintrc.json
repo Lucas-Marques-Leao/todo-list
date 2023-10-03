@@ -3,14 +3,51 @@
     "plugin:@nx/react-typescript",
     "next",
     "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
     "../../.eslintrc.json"
   ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "ignorePatterns": ["!**/*", ".next/**/*"],
   "overrides": [
     {
       "files": ["*.*"],
       "rules": {
-        "@next/next/no-html-link-for-pages": "off"
+        "@next/next/no-html-link-for-pages": "off",
+        "prettier/prettier": "error",
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-props-no-spreading": "off",
+        "space-before-function-paren": "off",
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error", { "variables": false }],
+        "@typescript-eslint/no-explicit-any": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "import/no-unresolved": "off",
+        "import/no-cycle": "off",
+        "jsx-a11y/control-has-associated-label": "off",
+        "react/no-array-index-key": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "no-unused-vars": "off",
+        "import/no-absolute-path": "off",
+        "react/jsx-no-useless-fragment": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "arrow-body-style": "off",
+        "react/require-default-props": "off",
+        "no-nested-ternary": "off",
+        "no-underscore-dangle": "off"
       }
     },
     {
