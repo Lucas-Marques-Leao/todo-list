@@ -2,7 +2,7 @@
 import { useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
 import React, { useEffect } from 'react';
-import { useLoading } from '../contexts/LoadingContext';
+import { useLoading } from '../../contexts/LoadingContext';
 
 const Index: React.FC = () => {
   //* hooks
